@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos nuevos</title>
+    <link rel="stylesheet" href="/Usuario/CSS/Autos_nuevos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="#" alt="Logo" width="65px" height="50px"></div>
+        
+        <div class="menu">
+            <a href="/Usuario/HTML/Inicio.html" class="button">Inicio</a>
+            <a href="/Usuario/HTML/Autos_nuevos.html" class="button">Autos Nuevos</a>
+            <a href="/Usuario/HTML/Autos_seminuevos.html" class="button">Autos Seminuevos</a>
+            <a href="/Usuario/HTML/Promociones.html" class="button">Promociones</a>
+            <a href="/Usuario/HTML/Nuestra_agencia.html" class="button">Nuestra agencia</a>
+        </div>
+    </nav>
+    <header>
+        <div class="header1">
+            <div class="header2">
+                <img src="/Imagenes/banner5.avif" alt="Banner">
+                <h1>Autos Nuevos</h1>
+            </div>
+        </div>
+    </header>
+    <section class="filter-section">
+        <div class="filter-container">
+            <select id="marca-filter">
+                <option value="">Marca</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Ford">Ford</option>
+                <option value="Audi">Audi</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Kia">Kia</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+            </select>
+            <select id="precio-filter">
+                <option value="">Precio</option>
+                <option value="asc">Más caro</option>
+                <option value="desc">Más barato</option>
+            </select>
+            <select id="ano-filter">
+                <option value="">Año</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+        </div>
+    </section>
+    <main>
+        <div class="card-container">
+            <div class="card" data-marca="Nissan" data-precio="20000" data-ano="2020">
+                <h2>Nissan Sentra</h2>
+                <img src="/Imagenes/Nissan_Sentra.jpg" alt="Nissan Sentra">
+                <p>Precio: $20,000 USD</p>
+                <p>Año: 2020</p>
+                <p>Marca: Nissan</p>
+                <p>Modelo: Sentra</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Nissan_Sentra.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Toyota" data-precio="18000" data-ano="2018">
+                <h2>Toyota Corolla</h2>
+                <img src="/Imagenes/Toyota_Corolla.webp" alt="Toyota Corolla">
+                <p>Precio: $18,000 USD</p>
+                <p>Año: 2018</p>
+                <p>Marca: Toyota</p>
+                <p>Modelo: Corolla</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Toyota_Corolla.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Kia" data-precio="27000" data-ano="2024">
+                <h2>Kia Sportage</h2>
+                <img src="/Imagenes/Kia_Sportage.jpg" alt="Kia Sportage">
+                <p>Precio: $27,000 USD</p>
+                <p>Año: 2024</p>
+                <p>Marca: Kia</p>
+                <p>Modelo: Sportage</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Kia_Sportage.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Honda" data-precio="32000" data-ano="2021">
+                <h2>Honda Pilot</h2>
+                <img src="/Imagenes/Honda_Pilot.jpg" alt="Honda Pilot">
+                <p>Precio: $32,000 USD</p>
+                <p>Año: 2021</p>
+                <p>Marca: Honda</p>
+                <p>Modelo: Pilot</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Honda_Pilot.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Ford" data-precio="50000" data-ano="2024">
+                <h2>Ford F-150 Lightning</h2>
+                <img src="/Imagenes/Ford F-150 Lightning.jpg" alt="Ford F-150 Lightning">
+                <p>Precio: $50,000 USD</p>
+                <p>Año: 2024</p>
+                <p>Marca: Ford</p>
+                <p>Modelo: F-150 Lightning</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Ford_F-150_Lightning.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Audi" data-precio="60000" data-ano="2022">
+                <h2>Audi Q7</h2>
+                <img src="/Imagenes/Audi_Q7.avif" alt="Audi Q7">
+                <p>Precio: $60,000 USD</p>
+                <p>Año: 2022</p>
+                <p>Marca: Audi</p>
+                <p>Modelo: Q7</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Audi_Q7.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Chevrolet" data-precio="28000" data-ano="2024">
+                <h2>Chevrolet Equinox</h2>
+                <img src="/Imagenes/Chevrolet_Equinox.webp" alt="Chevrolet Equinox">
+                <p>Precio: $28,000 USD</p>
+                <p>Año: 2024</p>
+                <p>Marca: Chevrolet</p>
+                <p>Modelo: Equinox</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Chevrolet_Equinox.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Nissan" data-precio="40000" data-ano="2023">
+                <h2>Nissan Z</h2>
+                <img src="/Imagenes/Nissan_Z.jpeg" alt="Nissan Z">
+                <p>Precio: $40,000 USD</p>
+                <p>Año: 2023</p>
+                <p>Marca: Nissan</p>
+                <p>Modelo: Z</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Nissan_Z.html'">Información</button>
+            </div>
+            <div class="card" data-marca="Kia" data-precio="23000" data-ano="2018">
+                <h2>Kia Optima</h2>
+                <img src="/Imagenes/Kia_Optima.jpg" alt="Kia Optima">
+                <p>Precio: $23,000 USD</p>
+                <p>Año: 2018</p>
+                <p>Marca: Kia</p>
+                <p>Modelo: Optima</p>
+                <button class="tag" onclick="window.location.href='/Usuario/HTML/Kia_Optima.html'">Información</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 por DLE | Onii-san | Periférico Norte S/N por Ave 22, Mérida, Yucatán, México 97115 | Ventas: 999-***-****</p>
+    </footer>
+    <script src="/Usuario/JS/Autos_nuevos.js"></script>
+</body>
+</html>
