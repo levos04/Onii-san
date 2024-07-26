@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/* Lateral Navigation */
+.nav {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .date-time {
+    flex: 1;
+    text-align: center;
+}
+
+header .welcome-message {
+    text-align: right;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
