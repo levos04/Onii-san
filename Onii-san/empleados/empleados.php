@@ -20,11 +20,11 @@
         <!-- Lateral Navigation -->
         <nav class="nav">
             <ul>
-                <li><a href="perfil_gerente.php">Perfil</a></li>
                 <li><a href="pagina_gerente.php">Menú</a></li>
                 <li><a href="empleados.php">Empleados</a></li>
                 <li><a href="coches.php">Coches</a></li>
                 <li><a href="ventas.php">Ventas</a></li>
+                <li class="profile-button"><a href="perfil_gerente.php">Perfil</a></li>
             </ul>
         </nav>
         
@@ -37,28 +37,16 @@
                 </div>
                 <div id="date-time" class="date-time"></div>
                 <div class="welcome-message">
-                    <h1>Bienvenido, Gerente</h1>
+                    <h1>Gestión de Empleados</h1>
                 </div>
             </header>
             
-            <!-- Cards -->
-            <div class="cards">
-                <div class="card">
-                    <h2>Card 1</h2>
-                    <p>Contenido del primer card.</p>
-                </div>
-                <div class="card">
-                    <h2>Card 2</h2>
-                    <p>Contenido del segundo card.</p>
-                </div>
-                <div class="card">
-                    <h2>Card 3</h2>
-                    <p>Contenido del tercer card.</p>
-                </div>
-                <div class="card">
-                    <h2>Card 4</h2>
-                    <p>Contenido del cuarto card.</p>
-                </div>
+            <!-- Botones para consultar empleados por puesto -->
+            <div class="buttons">
+                <button onclick="window.location.href='consulta_empleados.php?puesto=Vendedor'">Consultar Vendedores</button>
+                <button onclick="window.location.href='consulta_empleados.php?puesto=Asesor'">Consultar Asesores</button>
+                <button onclick="window.location.href='consulta_empleados.php?puesto=Mecanico'">Consultar Mecánicos</button>
+                <button onclick="window.location.href='agregar_empleado.php'">Agregar Empleado</button>
             </div>
         </div>
     </div>
